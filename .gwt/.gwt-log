@@ -1,0 +1,1139 @@
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   0% complete (ETR: 56 seconds)
+   10% complete (ETR: 54 seconds)
+   20% complete (ETR: 43 seconds)
+   30% complete (ETR: 30 seconds)
+   40% complete (ETR: 22 seconds)
+   50% complete (ETR: 16 seconds)
+   60% complete (ETR: 11 seconds)
+   70% complete (ETR: 8 seconds)
+   80% complete (ETR: 5 seconds)
+   90% complete (ETR: 2 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 26.56 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   10% complete (ETR: 36 seconds)
+   10% complete (ETR: 36 seconds)
+   20% complete (ETR: 29 seconds)
+   30% complete (ETR: 23 seconds)
+   40% complete (ETR: 18 seconds)
+   50% complete (ETR: 13 seconds)
+   60% complete (ETR: 10 seconds)
+   70% complete (ETR: 7 seconds)
+   80% complete (ETR: 4 seconds)
+   90% complete (ETR: 2 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 42.01 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   0% complete (ETR: ?)
+   10% complete (ETR: 81 seconds)
+   20% complete (ETR: 47 seconds)
+   30% complete (ETR: 32 seconds)
+   40% complete (ETR: 23 seconds)
+   50% complete (ETR: 17 seconds)
+   60% complete (ETR: 12 seconds)
+   70% complete (ETR: 8 seconds)
+   80% complete (ETR: 5 seconds)
+   90% complete (ETR: 2 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 47.77 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.01 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.02 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 4099 units from cache.
+Compiling...
+   40% complete (ETR: 7 seconds)
+   40% complete (ETR: 7 seconds)
+   40% complete (ETR: 7 seconds)
+   40% complete (ETR: 7 seconds)
+   40% complete (ETR: 7 seconds)
+   50% complete (ETR: 6 seconds)
+   60% complete (ETR: 4 seconds)
+   70% complete (ETR: 3 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 15.23 seconds
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding com.smartgwt.client.i18n.SmartGwtMessages
+   Invoking generator com.google.gwt.i18n.rebind.LocalizableGenerator
+      Processing interface com.smartgwt.client.i18n.SmartGwtMessages
+         Generating method body for advancedHiliteEditor_invalidCriteriaPrompt()
+         Generating method body for button_title()
+         Generating method body for calendar_addEventButtonHoverText()
+         Generating method body for calendar_cancelButtonTitle()
+         Generating method body for calendar_datePickerHoverText()
+         Generating method body for calendar_dayViewTitle()
+         Generating method body for calendar_detailsButtonTitle()
+         Generating method body for calendar_eventNameFieldTitle()
+         Generating method body for calendar_invalidDateMessage()
+         Generating method body for calendar_monthViewTitle()
+         Generating method body for calendar_nextButtonHoverText()
+         Generating method body for calendar_previousButtonHoverText()
+         Generating method body for calendar_saveButtonTitle()
+         Generating method body for calendar_timelineViewTitle()
+         Generating method body for calendar_weekViewTitle()
+         Generating method body for colorPicker_basicColorLabel()
+         Generating method body for colorPicker_blueFieldPrompt()
+         Generating method body for colorPicker_blueFieldTitle()
+         Generating method body for colorPicker_cancelButtonTitle()
+         Generating method body for colorPicker_greenFieldPrompt()
+         Generating method body for colorPicker_greenFieldTitle()
+         Generating method body for colorPicker_htmlFieldPrompt()
+         Generating method body for colorPicker_htmlFieldTitle()
+         Generating method body for colorPicker_hueFieldPrompt()
+         Generating method body for colorPicker_hueFieldTitle()
+         Generating method body for colorPicker_lessButtonTitle()
+         Generating method body for colorPicker_lumFieldPrompt()
+         Generating method body for colorPicker_lumFieldTitle()
+         Generating method body for colorPicker_moreButtonTitle()
+         Generating method body for colorPicker_okButtonTitle()
+         Generating method body for colorPicker_opacitySliderLabel()
+         Generating method body for colorPicker_redFieldPrompt()
+         Generating method body for colorPicker_redFieldTitle()
+         Generating method body for colorPicker_satFieldPrompt()
+         Generating method body for colorPicker_satFieldTitle()
+         Generating method body for colorPicker_selectTitle()
+         Generating method body for colorPicker_selectedColorLabel()
+         Generating method body for dataBoundComponent_addFormulaFieldText()
+         Generating method body for dataBoundComponent_addSummaryFieldText()
+         Generating method body for dataBoundComponent_duplicateDragMessage()
+         Generating method body for dataBoundComponent_editFormulaFieldText()
+         Generating method body for dataBoundComponent_editSummaryFieldText()
+         Generating method body for dataBoundComponent_offlineMessage()
+         Generating method body for dataBoundComponent_removeFormulaFieldText()
+         Generating method body for dataBoundComponent_removeSummaryFieldText()
+         Generating method body for dataBoundComponent_requiredFieldMessage()
+         Generating method body for dataBoundComponent_unknownErrorMessage()
+         Generating method body for dateChooser_cancelButtonTitle()
+         Generating method body for dateChooser_firstDayOfWeek()
+         Generating method body for dateChooser_todayButtonTitle()
+         Generating method body for dateItem_daySelectorPrompt()
+         Generating method body for dateItem_invalidDateStringMessage()
+         Generating method body for dateItem_monthSelectorPrompt()
+         Generating method body for dateItem_pickerIconPrompt()
+         Generating method body for dateItem_selectorFormat()
+         Generating method body for dateItem_yearSelectorPrompt()
+         Generating method body for dateRangeDialog_cancelButtonTitle()
+         Generating method body for dateRangeDialog_clearButtonTitle()
+         Generating method body for dateRangeDialog_headerTitle()
+         Generating method body for dateRangeDialog_okButtonTitle()
+         Generating method body for dateRangeItem_fromTitle()
+         Generating method body for dateRangeItem_toTitle()
+         Generating method body for date_dateSeparator()
+         Generating method body for date_shortDateFormat()
+         Generating method body for date_shortDatetimeFormat()
+         Generating method body for date_shortDayNames_1()
+         Generating method body for date_shortDayNames_2()
+         Generating method body for date_shortDayNames_3()
+         Generating method body for date_shortDayNames_4()
+         Generating method body for date_shortDayNames_5()
+         Generating method body for date_shortDayNames_6()
+         Generating method body for date_shortDayNames_7()
+         Generating method body for date_shortMonthNames_1()
+         Generating method body for date_shortMonthNames_10()
+         Generating method body for date_shortMonthNames_11()
+         Generating method body for date_shortMonthNames_12()
+         Generating method body for date_shortMonthNames_2()
+         Generating method body for date_shortMonthNames_3()
+         Generating method body for date_shortMonthNames_4()
+         Generating method body for date_shortMonthNames_5()
+         Generating method body for date_shortMonthNames_6()
+         Generating method body for date_shortMonthNames_7()
+         Generating method body for date_shortMonthNames_8()
+         Generating method body for date_shortMonthNames_9()
+         Generating method body for dialog_ApplyButtonTitle()
+         Generating method body for dialog_AskForValueTitle()
+         Generating method body for dialog_AskTitle()
+         Generating method body for dialog_CancelButtonTitle()
+         Generating method body for dialog_ConfirmTitle()
+         Generating method body for dialog_DoneButtonTitle()
+         Generating method body for dialog_LoginButtonTitle()
+         Generating method body for dialog_LoginErrorMessage()
+         Generating method body for dialog_LoginTitle()
+         Generating method body for dialog_NoButtonTitle()
+         Generating method body for dialog_OkButtonTitle()
+         Generating method body for dialog_PasswordTitle()
+         Generating method body for dialog_SayTitle()
+         Generating method body for dialog_UserNameTitle()
+         Generating method body for dialog_WarnTitle()
+         Generating method body for dialog_YesButtonTitle()
+         Generating method body for dynamicForm_errorsPreamble()
+         Generating method body for dynamicForm_formSubmitFailedWarning()
+         Generating method body for filterBuilder_addButtonPrompt()
+         Generating method body for filterBuilder_matchAllTitle()
+         Generating method body for filterBuilder_matchAnyTitle()
+         Generating method body for filterBuilder_matchNoneTitle()
+         Generating method body for filterBuilder_missingFieldPrompt()
+         Generating method body for filterBuilder_radioOptions_and()
+         Generating method body for filterBuilder_radioOptions_not()
+         Generating method body for filterBuilder_radioOptions_or()
+         Generating method body for filterBuilder_rangeSeparator()
+         Generating method body for filterBuilder_removeButtonPrompt()
+         Generating method body for filterBuilder_subClauseButtonPrompt()
+         Generating method body for filterBuilder_subClauseButtonTitle()
+         Generating method body for filterBuilder_topOperator()
+         Generating method body for filterClause_removeButtonPrompt()
+         Generating method body for formulaBuilder_autoHideCheckBoxLabel()
+         Generating method body for formulaBuilder_builderTypeText()
+         Generating method body for formulaBuilder_cancelButtonTitle()
+         Generating method body for formulaBuilder_defaultNewFieldTitle()
+         Generating method body for formulaBuilder_helpTextIntro()
+         Generating method body for formulaBuilder_helpWindowTitle()
+         Generating method body for formulaBuilder_instructionsTextStart()
+         Generating method body for formulaBuilder_invalidBlankPrompt()
+         Generating method body for formulaBuilder_invalidBuilderPrompt()
+         Generating method body for formulaBuilder_invalidGeneratedFunctionPrompt()
+         Generating method body for formulaBuilder_keyColumnTitle()
+         Generating method body for formulaBuilder_sampleHeaderTitle()
+         Generating method body for formulaBuilder_samplePromptForRecord()
+         Generating method body for formulaBuilder_samplePromptOutput()
+         Generating method body for formulaBuilder_saveButtonTitle()
+         Generating method body for formulaBuilder_saveConfirmationPrompt()
+         Generating method body for formulaBuilder_sourceFieldColumnTitle()
+         Generating method body for formulaBuilder_testButtonTitle()
+         Generating method body for formulaBuilder_titleFieldTitle()
+         Generating method body for formulaBuilder_validBuilderPrompt()
+         Generating method body for groupingMessages_byDayOfMonthTitle()
+         Generating method body for groupingMessages_byDayTitle()
+         Generating method body for groupingMessages_byHoursTitle()
+         Generating method body for groupingMessages_byMillisecondsTitle()
+         Generating method body for groupingMessages_byMinutesTitle()
+         Generating method body for groupingMessages_byMonthTitle()
+         Generating method body for groupingMessages_byQuarterTitle()
+         Generating method body for groupingMessages_bySecondsTitle()
+         Generating method body for groupingMessages_byUpcomingTitle()
+         Generating method body for groupingMessages_byWeekTitle()
+         Generating method body for groupingMessages_byYearTitle()
+         Generating method body for groupingMessages_upcomingBeforeTitle()
+         Generating method body for groupingMessages_upcomingLaterTitle()
+         Generating method body for groupingMessages_upcomingNextMonthTitle()
+         Generating method body for groupingMessages_upcomingNextWeekTitle()
+         Generating method body for groupingMessages_upcomingThisWeekTitle()
+         Generating method body for groupingMessages_upcomingTodayTitle()
+         Generating method body for groupingMessages_upcomingTomorrowTitle()
+         Generating method body for grouping_byDayOfMonthTitle()
+         Generating method body for grouping_byDayTitle()
+         Generating method body for grouping_byHoursTitle()
+         Generating method body for grouping_byMillisecondsTitle()
+         Generating method body for grouping_byMinutesTitle()
+         Generating method body for grouping_byMonthTitle()
+         Generating method body for grouping_byQuarterTitle()
+         Generating method body for grouping_bySecondsTitle()
+         Generating method body for grouping_byUpcomingTitle()
+         Generating method body for grouping_byWeekTitle()
+         Generating method body for grouping_byYearTitle()
+         Generating method body for grouping_upcomingBeforeTitle()
+         Generating method body for grouping_upcomingLaterTitle()
+         Generating method body for grouping_upcomingNextMonthTitle()
+         Generating method body for grouping_upcomingNextWeekTitle()
+         Generating method body for grouping_upcomingThisWeekTitle()
+         Generating method body for grouping_upcomingTodayTitle()
+         Generating method body for grouping_upcomingTomorrowTitle()
+         Generating method body for hiliteRule_removeButtonPrompt()
+         Generating method body for iMenuButton_title()
+         Generating method body for listGrid_autoFitAllText()
+         Generating method body for listGrid_autoFitFieldText()
+         Generating method body for listGrid_cancelEditingConfirmationMessage()
+         Generating method body for listGrid_clearAllSortingText()
+         Generating method body for listGrid_clearFilterText()
+         Generating method body for listGrid_clearSortFieldText()
+         Generating method body for listGrid_configureSortText()
+         Generating method body for listGrid_confirmDiscardEditsMessage()
+         Generating method body for listGrid_deleteRecordContextMenuItemTitle()
+         Generating method body for listGrid_discardEditsSaveButtonTitle()
+         Generating method body for listGrid_dismissEmbeddedComponentContextMenuItemTitle()
+         Generating method body for listGrid_emptyMessage()
+         Generating method body for listGrid_fieldVisibilitySubmenuTitle()
+         Generating method body for listGrid_freezeFieldText()
+         Generating method body for listGrid_freezeOnLeftText()
+         Generating method body for listGrid_freezeOnRightText()
+         Generating method body for listGrid_groupByText()
+         Generating method body for listGrid_loadingDataMessage()
+         Generating method body for listGrid_maxExpandedRecordsPrompt()
+         Generating method body for listGrid_newRecordRowMessage()
+         Generating method body for listGrid_openRecordEditorContextMenuItemTitle()
+         Generating method body for listGrid_recordEditorCancelButtonTitle()
+         Generating method body for listGrid_recordEditorSaveButtonTitle()
+         Generating method body for listGrid_removeFieldTitle()
+         Generating method body for listGrid_sortFieldAscendingText()
+         Generating method body for listGrid_sortFieldDescendingText()
+         Generating method body for listGrid_unfreezeFieldText()
+         Generating method body for listGrid_ungroupText()
+         Generating method body for menuButton_title()
+         Generating method body for miniDateRangeItem_fromDateOnlyPrefix()
+         Generating method body for miniDateRangeItem_pickerIconPrompt()
+         Generating method body for miniDateRangeItem_toDateOnlyPrefix()
+         Generating method body for multiFileItem_emptyMessage()
+         Generating method body for multiFilePicker_emptyMessage()
+         Generating method body for multiSortDialog_addLevelButtonTitle()
+         Generating method body for multiSortDialog_applyButtonTitle()
+         Generating method body for multiSortDialog_ascendingTitle()
+         Generating method body for multiSortDialog_cancelButtonTitle()
+         Generating method body for multiSortDialog_copyLevelButtonTitle()
+         Generating method body for multiSortDialog_deleteLevelButtonTitle()
+         Generating method body for multiSortDialog_descendingTitle()
+         Generating method body for multiSortDialog_directionFieldTitle()
+         Generating method body for multiSortDialog_firstSortLevelTitle()
+         Generating method body for multiSortDialog_invalidListPrompt()
+         Generating method body for multiSortDialog_levelDownPrompt()
+         Generating method body for multiSortDialog_levelUpPrompt()
+         Generating method body for multiSortDialog_otherSortLevelTitle()
+         Generating method body for multiSortDialog_propertyFieldTitle()
+         Generating method body for multiSortDialog_title()
+         Generating method body for operators_andTitle()
+         Generating method body for operators_betweenInclusiveTitle()
+         Generating method body for operators_betweenTitle()
+         Generating method body for operators_containsFieldTitle()
+         Generating method body for operators_containsTitle()
+         Generating method body for operators_endsWithFieldTitle()
+         Generating method body for operators_endsWithTitle()
+         Generating method body for operators_equalsFieldTitle()
+         Generating method body for operators_equalsTitle()
+         Generating method body for operators_greaterOrEqualFieldTitle()
+         Generating method body for operators_greaterOrEqualTitle()
+         Generating method body for operators_greaterThanFieldTitle()
+         Generating method body for operators_greaterThanTitle()
+         Generating method body for operators_iContainsTitle()
+         Generating method body for operators_iEndsWithTitle()
+         Generating method body for operators_iEqualsTitle()
+         Generating method body for operators_iNotContainsTitle()
+         Generating method body for operators_iNotEndsWithTitle()
+         Generating method body for operators_iNotEqualTitle()
+         Generating method body for operators_iNotStartsWithTitle()
+         Generating method body for operators_iStartsWithTitle()
+         Generating method body for operators_inSetTitle()
+         Generating method body for operators_iregexpTitle()
+         Generating method body for operators_isNullTitle()
+         Generating method body for operators_lessOrEqualFieldTitle()
+         Generating method body for operators_lessOrEqualTitle()
+         Generating method body for operators_lessThanFieldTitle()
+         Generating method body for operators_lessThanTitle()
+         Generating method body for operators_notContainsTitle()
+         Generating method body for operators_notEndsWithTitle()
+         Generating method body for operators_notEqualFieldTitle()
+         Generating method body for operators_notEqualTitle()
+         Generating method body for operators_notInSetTitle()
+         Generating method body for operators_notNullTitle()
+         Generating method body for operators_notStartsWithTitle()
+         Generating method body for operators_notTitle()
+         Generating method body for operators_orTitle()
+         Generating method body for operators_regexpTitle()
+         Generating method body for operators_startsWithFieldTitle()
+         Generating method body for operators_startsWithTitle()
+         Generating method body for pickListMenu_emptyMessage()
+         Generating method body for pickTreeItem_emptyMenuMessage()
+         Generating method body for portlet_closeConfirmationMessage()
+         Generating method body for printWindow_printButtonTitle()
+         Generating method body for printWindow_title()
+         Generating method body for relativeDateItem_daysAgoTitle()
+         Generating method body for relativeDateItem_daysFromNowTitle()
+         Generating method body for relativeDateItem_hoursAgoTitle()
+         Generating method body for relativeDateItem_hoursFromNowTitle()
+         Generating method body for relativeDateItem_millisecondsAgoTitle()
+         Generating method body for relativeDateItem_millisecondsFromNowTitle()
+         Generating method body for relativeDateItem_minutesAgoTitle()
+         Generating method body for relativeDateItem_minutesFromNowTitle()
+         Generating method body for relativeDateItem_monthsAgoTitle()
+         Generating method body for relativeDateItem_monthsFromNowTitle()
+         Generating method body for relativeDateItem_pickerIconPrompt()
+         Generating method body for relativeDateItem_presetOptions_minus_1m()
+         Generating method body for relativeDateItem_presetOptions_minus_1w()
+         Generating method body for relativeDateItem_presetOptions_plus_1m()
+         Generating method body for relativeDateItem_presetOptions_plus_1w()
+         Generating method body for relativeDateItem_presetOptions_today()
+         Generating method body for relativeDateItem_presetOptions_tomorrow()
+         Generating method body for relativeDateItem_presetOptions_yesterday()
+         Generating method body for relativeDateItem_secondsAgoTitle()
+         Generating method body for relativeDateItem_secondsFromNowTitle()
+         Generating method body for relativeDateItem_todayTitle()
+         Generating method body for relativeDateItem_weeksAgoTitle()
+         Generating method body for relativeDateItem_weeksFromNowTitle()
+         Generating method body for relativeDateItem_yearsAgoTitle()
+         Generating method body for relativeDateItem_yearsFromNowTitle()
+         Generating method body for richTextEditor_alignCenterPrompt()
+         Generating method body for richTextEditor_alignLeftPrompt()
+         Generating method body for richTextEditor_alignRightPrompt()
+         Generating method body for richTextEditor_backgroundColorPrompt()
+         Generating method body for richTextEditor_boldSelectionPrompt()
+         Generating method body for richTextEditor_colorPrompt()
+         Generating method body for richTextEditor_copySelectionPrompt()
+         Generating method body for richTextEditor_cutSelectionPrompt()
+         Generating method body for richTextEditor_fontPrompt()
+         Generating method body for richTextEditor_fontSizePrompt()
+         Generating method body for richTextEditor_indentSelectionPrompt()
+         Generating method body for richTextEditor_italicSelectionPrompt()
+         Generating method body for richTextEditor_justifyPrompt()
+         Generating method body for richTextEditor_linkPrompt()
+         Generating method body for richTextEditor_linkUrlTitle()
+         Generating method body for richTextEditor_outdentSelectionPrompt()
+         Generating method body for richTextEditor_pasteSelectionPrompt()
+         Generating method body for richTextEditor_underlineSelectionPrompt()
+         Generating method body for rpcManager_defaultPrompt()
+         Generating method body for rpcManager_fetchDataPrompt()
+         Generating method body for rpcManager_removeDataPrompt()
+         Generating method body for rpcManager_saveDataPrompt()
+         Generating method body for rpcManager_timeoutErrorMessage()
+         Generating method body for rpcManager_validateDataPrompt()
+         Generating method body for selectOtherItem_otherTitle()
+         Generating method body for selectOtherItem_selectOtherPrompt()
+         Generating method body for selection_selectionRangeNotLoadedMessage()
+         Generating method body for summaryBuilder_autoHideCheckBoxLabel()
+         Generating method body for summaryBuilder_builderTypeText()
+         Generating method body for summaryBuilder_helpTextIntro()
+         Generating method body for time_AMIndicator()
+         Generating method body for time_PMIndicator()
+         Generating method body for treeGrid_cantDragIntoChildMessage()
+         Generating method body for treeGrid_cantDragIntoSelfMessage()
+         Generating method body for treeGrid_parentAlreadyContainsChildMessage()
+         Generating method body for validator_mustBeEarlierThan()
+         Generating method body for validator_mustBeExactLength()
+         Generating method body for validator_mustBeGreaterThan()
+         Generating method body for validator_mustBeLaterThan()
+         Generating method body for validator_mustBeLessThan()
+         Generating method body for validator_mustBeLongerThan()
+         Generating method body for validator_mustBeShorterThan()
+         Generating method body for validator_notABoolean()
+         Generating method body for validator_notAColor()
+         Generating method body for validator_notADate()
+         Generating method body for validator_notADecimal()
+         Generating method body for validator_notAFunction()
+         Generating method body for validator_notARegex()
+         Generating method body for validator_notAString()
+         Generating method body for validator_notATime()
+         Generating method body for validator_notAnIdentifier()
+         Generating method body for validator_notAnInteger()
+         Generating method body for validator_notOneOf()
+         Generating method body for validator_requiredField()
+         Generating method body for window_title()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.11 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.11 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031566603.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031566603.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031566603_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.user.cellview.client.CellTable.Resources
+   Invoking generator com.google.gwt.resources.rebind.context.InlineClientBundleGenerator
+      Preparing method cellTableFooterBackground
+         Adding image 'com.google.gwt.user.cellview.client.CellTable.Resources.cellTableFooterBackground'
+      Preparing method cellTableHeaderBackground
+         Adding image 'com.google.gwt.user.cellview.client.CellTable.Resources.cellTableHeaderBackground'
+      Preparing method cellTableLoading
+         Adding image 'com.google.gwt.user.cellview.client.CellTable.Resources.cellTableLoading'
+      Preparing method cellTableSelectedBackground
+         Adding image 'com.google.gwt.user.cellview.client.CellTable.Resources.cellTableSelectedBackground'
+      Preparing method cellTableSortAscending
+         Adding image 'com.google.gwt.user.cellview.client.CellTable.Resources.cellTableSortAscending'
+      Preparing method cellTableSortDescending
+         Adding image 'com.google.gwt.user.cellview.client.CellTable.Resources.cellTableSortDescending'
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.09 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.user.client.ui.impl.ClippedImageImpl.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.user.client.ui.impl.ClippedImageImpl.Template
+         Generating method body for image()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.user.cellview.client.AbstractCellTable.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.user.cellview.client.AbstractCellTable.Template
+         Generating method body for div()
+         Generating method body for tbody()
+         Generating method body for td()
+         Generating method body for tdBothAlign()
+         Generating method body for tdHorizontalAlign()
+         Generating method body for tdVerticalAlign()
+         Generating method body for tfoot()
+         Generating method body for thead()
+         Generating method body for tr()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031575374.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031575374.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031575374_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031674607.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031674607.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031674607_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031688849.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031688849.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031688849_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031698292.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031698292.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031698292_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031702697.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031702697.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031702697_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031711943.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031711943.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031711943_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031748806.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031748806.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031748806_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031749108.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031749108.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031749108_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031763029.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031763029.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031763029_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031766791.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031766791.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031766791_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031775131.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031775131.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031775131_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031778074.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031778074.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031778074_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031809665.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031809665.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437031809665_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032097975.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032097975.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032097975_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.31 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032108640.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032108640.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032108640_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032115927.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032115927.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032115927_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.81 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032448502.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032448502.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.83 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032448502_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.07 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.08 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032450981.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032450981.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.08 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032450981_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032475536.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032475536.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032475536_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO.BC_SUCOUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032485723.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032485723.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding ctspc.qlsccq.com.client.BC_SUCO_BC_SUCOUiBinderImpl_designTime1437032485723_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   0% complete (ETR: 47 seconds)
+   10% complete (ETR: 46 seconds)
+   20% complete (ETR: 32 seconds)
+   30% complete (ETR: 25 seconds)
+   40% complete (ETR: 19 seconds)
+   50% complete (ETR: 14 seconds)
+   60% complete (ETR: 10 seconds)
+   70% complete (ETR: 7 seconds)
+   80% complete (ETR: 4 seconds)
+   90% complete (ETR: 2 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 39.80 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   10% complete (ETR: 42 seconds)
+   10% complete (ETR: 42 seconds)
+   20% complete (ETR: 28 seconds)
+   30% complete (ETR: 21 seconds)
+   40% complete (ETR: 16 seconds)
+   50% complete (ETR: 12 seconds)
+   60% complete (ETR: 9 seconds)
+   70% complete (ETR: 6 seconds)
+   80% complete (ETR: 5 seconds)
+   90% complete (ETR: 2 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 38.06 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   10% complete (ETR: 35 seconds)
+   10% complete (ETR: 35 seconds)
+   20% complete (ETR: 32 seconds)
+   30% complete (ETR: 23 seconds)
+   40% complete (ETR: 18 seconds)
+   50% complete (ETR: 14 seconds)
+   60% complete (ETR: 10 seconds)
+   70% complete (ETR: 7 seconds)
+   80% complete (ETR: 4 seconds)
+   90% complete (ETR: 2 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 31.96 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.02 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   10% complete (ETR: 42 seconds)
+   10% complete (ETR: 42 seconds)
+   20% complete (ETR: 30 seconds)
+   30% complete (ETR: 23 seconds)
+   40% complete (ETR: 17 seconds)
+   50% complete (ETR: 13 seconds)
+   60% complete (ETR: 10 seconds)
+   70% complete (ETR: 7 seconds)
+   80% complete (ETR: 4 seconds)
+   90% complete (ETR: 2 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 41.57 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   10% complete (ETR: 43 seconds)
+   10% complete (ETR: 42 seconds)
+   20% complete (ETR: 32 seconds)
+   30% complete (ETR: 23 seconds)
+   40% complete (ETR: 17 seconds)
+   50% complete (ETR: 12 seconds)
+   60% complete (ETR: 9 seconds)
+   70% complete (ETR: 7 seconds)
+   80% complete (ETR: 4 seconds)
+   90% complete (ETR: 2 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 38.63 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.01 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   0% complete (ETR: 63 seconds)
+   10% complete (ETR: 57 seconds)
+   20% complete (ETR: 35 seconds)
+   30% complete (ETR: 24 seconds)
+   40% complete (ETR: 19 seconds)
+   50% complete (ETR: 15 seconds)
+   60% complete (ETR: 11 seconds)
+   70% complete (ETR: 8 seconds)
+   80% complete (ETR: 5 seconds)
+   90% complete (ETR: 2 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 67.09 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   0% complete (ETR: 62 seconds)
+   10% complete (ETR: 51 seconds)
+   20% complete (ETR: 37 seconds)
+   30% complete (ETR: 27 seconds)
+   40% complete (ETR: 20 seconds)
+   50% complete (ETR: 14 seconds)
+   60% complete (ETR: 10 seconds)
+   70% complete (ETR: 7 seconds)
+   80% complete (ETR: 4 seconds)
+   90% complete (ETR: 2 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 46.41 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Removing invalidated units
+Finding entry point classes

@@ -1,0 +1,3 @@
+# Module evn_qlsccq_new
+# RPC service class, partial path of RPC policy file
+ctspc.qlsccq.com.client.GreetingService, 88C8B8EEF5AD6263C5D0E2150315FC8F.gwt.rpc

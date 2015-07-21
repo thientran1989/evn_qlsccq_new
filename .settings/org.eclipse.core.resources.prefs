@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//src/ctspc/qlsccq/com/client/BC_SUCO.java=UTF-8
+encoding//src/ctspc/qlsccq/com/client/DS_Tram.java=UTF-8
+encoding//src/ctspc/qlsccq/com/client/DS_Tru.java=UTF-8
+encoding//src/ctspc/qlsccq/com/client/DS_Tuyen.java=UTF-8
+encoding//src/ctspc/qlsccq/com/client/Main.java=UTF-8
+encoding//src/ctspc/qlsccq/com/client/Tao_Suco.java=UTF-8
+encoding//src/ctspc/qlsccq/com/client/Tao_TRAM.java=UTF-8
+encoding//src/ctspc/qlsccq/com/client/Tao_TRU.java=UTF-8
+encoding//src/ctspc/qlsccq/com/client/Tao_TUYEN.java=UTF-8
+encoding//src/ctspc/qlsccq/com/server/Android_DSMBA_Servlet.java=UTF-8
+encoding//src/ctspc/qlsccq/com/server/Android_InsertTRU_Servlet.java=UTF-8
+encoding//src/ctspc/qlsccq/com/server/GreetingServiceImpl.java=UTF-8
+encoding//src/ctspc/qlsccq/com/server/ReportServlet.java=UTF-8
+encoding//src/ctspc/qlsccq/com/shared/Obj_SU_CO.java=UTF-8
+encoding//src/ctspc/qlsccq/com/shared/Utils.java=UTF-8

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>ctspc.qlsccq.com.server.GreetingServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>/evn_qlsccq_new/greet</url-pattern>
+  </servlet-mapping>
+  
+   <!-- android Servlets -->
+  <servlet>
+    <servlet-name>agetds</servlet-name>
+    <servlet-class>ctspc.qlsccq.com.server.Android_DSMBA_Servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>agetds</servlet-name>
+    <url-pattern>/getds</url-pattern>
+  </servlet-mapping>
+  
+   <!-- Servlets -->
+  <servlet>
+    <servlet-name>bcsc</servlet-name>
+    <servlet-class>ctspc.qlsccq.com.server.ReportServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>bcsc</servlet-name>
+    <url-pattern>/bcsc</url-pattern>
+  </servlet-mapping>
+  
+   <!-- android Servlets -->
+  <servlet>
+    <servlet-name>athemtru</servlet-name>
+    <servlet-class>ctspc.qlsccq.com.server.Android_InsertTRU_Servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>athemtru</servlet-name>
+    <url-pattern>/themtru</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Evn_qlsccq_new.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
