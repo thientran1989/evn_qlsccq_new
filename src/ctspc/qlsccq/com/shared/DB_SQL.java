@@ -9,6 +9,7 @@ public class DB_SQL {
 	public static String SQL_GET_TUYEN = "select * from CSKH.SC_TUYEN";
 	public static String SQL_GET_TRU = "select * from CSKH.SC_TRU order by "+Obj_TRU.tag_TG_TAO+" desc";
 	public static String SQL_GET_SUCO = "select * from CSKH.SC_SU_CO order by "+Obj_SU_CO.tag_TG_PHATHIEN+" desc";
+	public static String SQL_GET_SOI = "select * from CSKH.SC_SOI order by "+Obj_SOI.tag_TUYEN+" desc";
 	
 	public static String get_SQL_DELETE_TRU(Obj_TRU mTRU){
 		String SQL ="delete from CSKH."

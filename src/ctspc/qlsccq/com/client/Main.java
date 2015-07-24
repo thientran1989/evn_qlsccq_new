@@ -194,6 +194,29 @@ public class Main extends Composite {
 				
 			}
 		};
+		Command menuCommand_loc_soi = new Command() {
+			public void execute() {
+				greetingService.getTUYEN_USE(new AsyncCallback<CallbackResult>(){
+					public void onFailure(Throwable caught) {
+						Window.alert("LỖI LẤY TUYẾN "+caught.toString());
+					}
+					public void onSuccess(CallbackResult result) {
+						@SuppressWarnings("unchecked")
+						List<Obj_TUYEN> list_donvi = (List<Obj_TUYEN>) result.getResultObj();
+						if (list_donvi!=null){
+							// tao tru
+							ver_main.clear();
+							ver_main.add(new DS_Soi(list_donvi));
+							// het tao tru
+						}else{
+							Window.alert("TUYEN NULL\n");
+						}
+					
+				}
+				});
+				
+			}
+		};
 		
 		// menu bao cao
 		Command menuCommand_bc_suco = new Command() {
@@ -233,6 +256,7 @@ public class Main extends Composite {
 		locMenu.addItem("DS Trạm", menuCommand_loc_tram);
 		locMenu.addItem("DS Tuyến", menuCommand_loc_tuyen);
 		locMenu.addItem("DS Trụ", menuCommand_loc_tru);
+		locMenu.addItem("DS Sợi", menuCommand_loc_soi);
 		
 		// menu bao cao
 		MenuBar baocaoMenu = new MenuBar(true);

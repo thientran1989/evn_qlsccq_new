@@ -22,6 +22,7 @@ import com.google.gson.JsonParser;
 import ctspc.qlsccq.com.shared.CallbackResult;
 import ctspc.qlsccq.com.shared.DB_CONFIG;
 import ctspc.qlsccq.com.shared.DB_SQL;
+import ctspc.qlsccq.com.shared.Obj_SOI;
 import ctspc.qlsccq.com.shared.Obj_SU_CO;
 import ctspc.qlsccq.com.shared.Obj_TRAM;
 import ctspc.qlsccq.com.shared.Obj_TRU;
@@ -83,6 +84,7 @@ public class Android_DSMBA_Servlet extends HttpServlet {
 		List<Obj_TUYEN> list_TUYEN = null;
 		List<Obj_SU_CO> list_SUCO = null;
 		List<Obj_donvi> list_DONVI = null;
+		List<Obj_SOI> list_SOI = null;
 
 		Connection con =null;
 		ResultSet rs_tram = null;
@@ -95,6 +97,8 @@ public class Android_DSMBA_Servlet extends HttpServlet {
 		Statement st_suco = null;
 		ResultSet rs_donvi = null;
 		Statement st_donvi = null;
+		ResultSet rs_soi = null;
+		Statement st_soi = null;
 		try {
 			con = getDBConnection();
 			
@@ -142,6 +146,7 @@ public class Android_DSMBA_Servlet extends HttpServlet {
 			}
 			mCB.setList_tru(list_tru);
 			
+			// su co
 			st_suco = con.createStatement();
 			rs_suco = st_suco.executeQuery(DB_SQL.SQL_GET_SUCO);
 			if (rs_suco != null) {
@@ -152,6 +157,18 @@ public class Android_DSMBA_Servlet extends HttpServlet {
 				}
 			}
 			mCB.setList_suco(list_SUCO);
+			
+			// soi
+			st_soi = con.createStatement();
+			rs_soi = st_soi.executeQuery(DB_SQL.SQL_GET_SOI);
+			if (rs_soi != null) {
+				list_SOI = new ArrayList<Obj_SOI>();
+				while (rs_soi.next()) {
+					Obj_SOI mMBA = ResultSet_Obj.set_result_SOI(rs_soi);
+					list_SOI.add(mMBA);
+				}
+			}
+			mCB.setList_SOI(list_SOI);
 			
 		} catch (Exception e) {
 			json = e.toString();
@@ -189,6 +206,12 @@ public class Android_DSMBA_Servlet extends HttpServlet {
 				}
 				if (rs_donvi != null) {
 					rs_donvi.close();
+				}
+				if (st_soi != null) {
+					st_soi.close();
+				}
+				if (rs_soi != null) {
+					rs_soi.close();
 				}
 			} catch (SQLException e) {
 				e.printStackTrace();
