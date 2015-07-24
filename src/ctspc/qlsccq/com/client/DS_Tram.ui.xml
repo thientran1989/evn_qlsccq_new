@@ -111,8 +111,8 @@
 	}
 	</ui:style>
 	<g:HTMLPanel>
-		<g:VerticalPanel ui:field="ver3" styleName="{style.paneL_border}">
-			<g:HorizontalPanel styleName="{style.panel_padding_small}" verticalAlignment="ALIGN_MIDDLE">
+		<g:VerticalPanel ui:field="ver3" styleName="{style.paneL_border}" width="100%">
+			<g:HorizontalPanel styleName="{style.panel_padding_small}" verticalAlignment="ALIGN_MIDDLE" width="100%">
 				<g:HorizontalPanel styleName="{style.panel_padding_small}">
 					<g:TextBox styleName="{style.input}" ui:field="edt_tram" />
 				</g:HorizontalPanel>

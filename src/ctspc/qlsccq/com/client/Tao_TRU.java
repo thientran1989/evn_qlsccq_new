@@ -22,6 +22,7 @@ import ctspc.qlsccq.com.shared.CallbackResult;
 import ctspc.qlsccq.com.shared.Obj_TRU;
 import ctspc.qlsccq.com.shared.Obj_TUYEN;
 import ctspc.qlsccq.com.shared.Obj_Text;
+import ctspc.qlsccq.com.shared.Obj_User;
 import ctspc.qlsccq.com.shared.Obj_donvi;
 import ctspc.qlsccq.com.shared.Utils;
 
@@ -30,7 +31,6 @@ public class Tao_TRU extends PopupPanel {
 	private static Tao_TRUUiBinder uiBinder = GWT.create(Tao_TRUUiBinder.class);
 	private final GreetingServiceAsync mIodata = GWT
 			.create(GreetingService.class);
-	@UiField ListBox cbx_TUYEN;
 	@UiField ListBox cbx_MANGXONG;
 	@UiField TextBox edt_TRU;
 	@UiField
@@ -39,23 +39,25 @@ public class Tao_TRU extends PopupPanel {
 	SimplePanel pane_hoantat;
 	@UiField ListBox cbx_NHANHRE;
 	@UiField ListBox cbx_DONVI;
+	@UiField TextBox edt_GHICHU;
 	List<Obj_Text> list_mangxong=null;
 	List<Obj_Text> list_nhanhre=null;
 	List<Obj_TUYEN> list_tuyen=null;
 	List<Obj_donvi> list_donvi=null;
+	Obj_User oL_USER=null;
 
 	interface Tao_TRUUiBinder extends UiBinder<Widget, Tao_TRU> {
 	}
 
-	public Tao_TRU(List<Obj_donvi> list_DONVI,List<Obj_TUYEN> list_TUYEN) {
+	public Tao_TRU(Obj_User oUSER,List<Obj_donvi> list_DONVI,List<Obj_TUYEN> list_TUYEN) {
 		
 		setWidget(uiBinder.createAndBindUi(this));
 		super.setGlassEnabled(true);
 		super.center();
+		oL_USER = oUSER;
 		list_donvi = new ArrayList<Obj_donvi>(list_DONVI);
 		list_tuyen = new ArrayList<Obj_TUYEN>(list_TUYEN);
 		set_combo_donvi(list_donvi);
-		set_combo_tuyen(list_TUYEN);
 		list_mangxong = Utils.get_list_MANGXONG();
 		set_combo_mangxong(list_mangxong);
 		list_nhanhre = Utils.get_NHANHRE();
@@ -84,7 +86,6 @@ public class Tao_TRU extends PopupPanel {
 				
 				final Obj_TRU oTRU = get_TRU();
 				if(oTRU.getTRU().length()>0
-					& oTRU.getTUYEN().length()>0
 					& oTRU.getMANGXONG().length()>0){
 				// start
 				SC.confirm("Bạn có muốn tạo trụ "+oTRU.TRU+" không ?", new BooleanCallback() {
@@ -110,23 +111,7 @@ public class Tao_TRU extends PopupPanel {
 											}
 										});
 									}else if(result.getResultString().equals(Utils.CB_TONTAI)){
-										if(oTRU.NHANH_RE.equals("NHANHRE")){
-											mIodata.tao_TRU(oTRU, new AsyncCallback<CallbackResult>() {
-												public void onFailure(Throwable caught) {
-													SC.say("Lỗi tạo trụ : \n"+caught.toString());
-												}
-												public void onSuccess(CallbackResult result) {
-													if(result.getResultString().equals(Utils.CB_OK)){
-														SC.say("Tạo trụ thành công !");
-														Tao_TRU.this.hide();
-													}else{
-														SC.say(result.getResultString());
-													}
-												}
-											});
-										}else{
 											SC.say(oTRU.getTRU()+" đã tồn tại !");
-										}
 									}else{
 										SC.say("success \n "+result.getResultString());
 									}
@@ -150,10 +135,12 @@ public class Tao_TRU extends PopupPanel {
 			oTRU.setTRU(edt_TRU.getText().toString());
 			oTRU.setX("0");
 			oTRU.setY("0");
-			oTRU.setTUYEN(list_tuyen.get(cbx_TUYEN.getSelectedIndex()).getMA_TUYEN());
 			oTRU.setMANGXONG(list_mangxong.get(cbx_MANGXONG.getSelectedIndex()).KEY);
 			oTRU.setNHANH_RE(list_nhanhre.get(cbx_NHANHRE.getSelectedIndex()).KEY);
 			oTRU.setMA_DVI(list_donvi.get(cbx_DONVI.getSelectedIndex()).ma_donvi);
+			oTRU.setGHI_CHU(edt_GHICHU.getText().toString());
+			oTRU.setUSER_TAO(oL_USER.getUsername_mba());
+			oTRU.setUSER_SUA(oL_USER.getUsername_mba());
 		} catch (Exception e) {
 			
 		}
@@ -163,13 +150,6 @@ public class Tao_TRU extends PopupPanel {
 		if(list_dvi!=null){
 			for (Obj_donvi obj_donvi : list_dvi) {
 				cbx_DONVI.addItem(obj_donvi.getTen_donvi());
-			}
-		}
-	}
-	public void set_combo_tuyen(List<Obj_TUYEN> list_dvi){
-		if(list_dvi!=null){
-			for (Obj_TUYEN obj_donvi : list_dvi) {
-				cbx_TUYEN.addItem(obj_donvi.getTEN_TUYEN());
 			}
 		}
 	}

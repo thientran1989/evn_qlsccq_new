@@ -50,4 +50,12 @@ public class Utils {
 		list_tinhtrang.add(new Obj_Text("F8-12FO-DKXD", "CÁP QUANG F8-12FO DỰ KIẾN XD"));
 		return list_tinhtrang;
 	}
+	public static final List<Obj_Text> get_list_DVQL(){
+		List<Obj_Text> list_tinhtrang = new ArrayList<Obj_Text>();
+		list_tinhtrang.add(new Obj_Text("PCCT", "PCCT"));
+		list_tinhtrang.add(new Obj_Text("SCTV", "SCTV"));
+		list_tinhtrang.add(new Obj_Text("FPT", "FPT"));
+		list_tinhtrang.add(new Obj_Text("BTLTT", "BTLTT"));
+		return list_tinhtrang;
+	}
 }

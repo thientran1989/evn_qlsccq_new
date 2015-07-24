@@ -157,20 +157,16 @@
 						</g:HorizontalPanel>
 						<g:HorizontalPanel styleName="{style.panel_input}">
 							<g:Label styleName="{style.label}" text="Phạm vi ảnh hưởng" />
-							<g:TextBox styleName="{style.input}" ui:field="edt_PHAMVI" />
+							<g:ListBox styleName="{style.input}" ui:field="cbx_PHAMVI"/>
 						</g:HorizontalPanel>
 						<g:HorizontalPanel styleName="{style.panel_input}">
 							<g:Label styleName="{style.label}" text="Đơn vị quản lý tài sản" />
-							<g:TextBox styleName="{style.input}" ui:field="edt_DONVI" />
-						</g:HorizontalPanel>
-						<g:HorizontalPanel styleName="{style.panel_input}">
-							<g:Label text="ĐƠN VỊ" styleName="{style.label}" />
-							<g:ListBox styleName="{style.input}" ui:field="cbx_DONVI" />
+							<g:ListBox styleName="{style.input}" ui:field="cbx_DVIQLTS"/>
 						</g:HorizontalPanel>
 						<g:HorizontalPanel styleName="{style.panel_input}">
 							<g:Label text="ĐƠN VỊ" styleName="{style.label}" />
 							<chzn:ChosenListBox maxSelectedOptions="5" styleName="{style.panel_input}"
-								placeholderText="Chọn trụ...">
+								placeholderText="Chọn trụ..." ui:field="chzn_DIEM">
 							</chzn:ChosenListBox>
 						</g:HorizontalPanel>
 					</g:VerticalPanel>

@@ -24,6 +24,7 @@ import ctspc.qlsccq.com.shared.CallbackResult;
 import ctspc.qlsccq.com.shared.Obj_TRAM;
 import ctspc.qlsccq.com.shared.Obj_TUYEN;
 import ctspc.qlsccq.com.shared.Obj_Text;
+import ctspc.qlsccq.com.shared.Obj_User;
 import ctspc.qlsccq.com.shared.Utils;
 
 public class Tao_TUYEN extends PopupPanel{
@@ -42,16 +43,19 @@ public class Tao_TUYEN extends PopupPanel{
 	SimplePanel pane_trolai;
 	@UiField
 	SimplePanel pane_hoantat;
+	@UiField TextBox edt_TT_SOI;
 	List<Obj_TRAM> local_list_tram =null;
 	List<Obj_Text> list_cap=null;
+	Obj_User oL_USER=null;
 
 	interface Tao_TUYENUiBinder extends UiBinder<Widget, Tao_TUYEN> {
 	}
 
-	public Tao_TUYEN(List<Obj_TRAM> list_tram) {
+	public Tao_TUYEN(List<Obj_TRAM> list_tram,Obj_User oUSER) {
 		setWidget(uiBinder.createAndBindUi(this));
 		super.setGlassEnabled(true);
 		super.center();
+		oL_USER = oUSER;
 		local_list_tram = new ArrayList<Obj_TRAM>(list_tram);
 		set_combo_tram(local_list_tram);
 		list_cap = Utils.get_list_CAPQUANG();
@@ -136,9 +140,12 @@ public class Tao_TUYEN extends PopupPanel{
 			oTRU.setMA_TUYEN(edt_MATUYEN.getText().toString());
 			oTRU.setTEN_TUYEN(edt_TENTUYEN.getText().toString());
 			oTRU.setCHIEU_DAI(edt_CHIEUDAI.getText().toString());
+			oTRU.setTT_SOI(edt_TT_SOI.getText().toString());
 			oTRU.setTRAM_DAU(local_list_tram.get(cbx_TRAMDAU.getSelectedIndex()).getMA_TRAM());
 			oTRU.setTRAM_CUOI(local_list_tram.get(cbx_TRAMCUOI.getSelectedIndex()).getMA_TRAM());
 			oTRU.setLOAI_CAP(list_cap.get(cbx_LOAICAP.getSelectedIndex()).KEY);
+			oTRU.setUSER_TAO(oL_USER.getUsername_mba());
+			oTRU.setUSER_SUA(oL_USER.getUsername_mba());
 		} catch (Exception e) {
 			
 		}

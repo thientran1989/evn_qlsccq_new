@@ -11,6 +11,9 @@ public class Obj_TUYEN implements Serializable{
 	public String TRAM_CUOI;
 	public String LOAI_CAP;
 	public String CHIEU_DAI;
+	public String TT_SOI;
+	public String USER_TAO;
+	public String USER_SUA;
 	
 	public static final String tag_TABLE_TUYEN="SC_TUYEN";
 	public static final String tag_MA_TUYEN="MA_TUYEN";
@@ -19,6 +22,22 @@ public class Obj_TUYEN implements Serializable{
 	public static final String tag_TRAM_CUOI="TRAM_CUOI";
 	public static final String tag_LOAI_CAP="LOAI_CAP";
 	public static final String tag_CHIEU_DAI="CHIEU_DAI";
+	public static final String tag_TT_SOI="TT_SOI";
+	public static final String tag_USER_TAO="USER_TAO";
+	public static final String tag_USER_SUA="USER_SUA";
+	
+	public String getUSER_TAO() {
+		return USER_TAO;
+	}
+	public void setUSER_TAO(String uSER_TAO) {
+		USER_TAO = uSER_TAO;
+	}
+	public String getUSER_SUA() {
+		return USER_SUA;
+	}
+	public void setUSER_SUA(String uSER_SUA) {
+		USER_SUA = uSER_SUA;
+	}
 	public String getMA_TUYEN() {
 		return MA_TUYEN;
 	}
@@ -54,6 +73,13 @@ public class Obj_TUYEN implements Serializable{
 	}
 	public void setCHIEU_DAI(String cHIEU_DAI) {
 		CHIEU_DAI = cHIEU_DAI;
+	}
+	
+	public String getTT_SOI() {
+		return TT_SOI;
+	}
+	public void setTT_SOI(String tT_SOI) {
+		TT_SOI = tT_SOI;
 	}
 	public String getLOAI_CAP_label() {
 		String KQ = getLOAI_CAP();

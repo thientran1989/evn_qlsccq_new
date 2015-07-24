@@ -19,6 +19,8 @@ public class Obj_SU_CO implements Serializable{
 	public String TRU;
 	public String SO_QD;
 	public String NGUYEN_NHAN_TTE;
+	public String USER_TAO;
+	public String USER_SUA;
 	
 	public static final String tag_TABLE="SC_SU_CO";
 	public static final String tag_TIME_PHATHIEN ="TIME_PHATHIEN";
@@ -33,7 +35,21 @@ public class Obj_SU_CO implements Serializable{
 	public static final String tag_TRU ="TRU";
 	public static final String tag_SO_QD ="SO_QD";
 	public static final String tag_NGUYEN_NHAN_TTE ="NGUYEN_NHAN_TTE";
+	public static final String tag_USER_TAO="USER_TAO";
+	public static final String tag_USER_SUA="USER_SUA";
 	
+	public String getUSER_TAO() {
+		return USER_TAO;
+	}
+	public void setUSER_TAO(String uSER_TAO) {
+		USER_TAO = uSER_TAO;
+	}
+	public String getUSER_SUA() {
+		return USER_SUA;
+	}
+	public void setUSER_SUA(String uSER_SUA) {
+		USER_SUA = uSER_SUA;
+	}
 	public java.sql.Timestamp getTG_PHATHIEN() {
 		return TG_PHATHIEN;
 	}

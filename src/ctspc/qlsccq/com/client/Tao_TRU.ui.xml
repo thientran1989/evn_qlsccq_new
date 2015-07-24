@@ -134,16 +134,16 @@
 								<g:ListBox styleName="{style.input}" ui:field="cbx_DONVI" />
 							</g:HorizontalPanel>
 							<g:HorizontalPanel styleName="{style.panel_input}">
-								<g:Label text="TUYẾN" styleName="{style.label}" />
-								<g:ListBox styleName="{style.input}" ui:field="cbx_TUYEN" />
-							</g:HorizontalPanel>
-							<g:HorizontalPanel styleName="{style.panel_input}">
 								<g:Label text="MĂNGXÔNG" styleName="{style.label}" ui:field="TV_MANGXONG" />
 								<g:ListBox styleName="{style.input}" ui:field="cbx_MANGXONG" />
 							</g:HorizontalPanel>
 							<g:HorizontalPanel styleName="{style.panel_input}">
 								<g:Label text="NHÁNH RẼ" styleName="{style.label}" />
 								<g:ListBox styleName="{style.input}" ui:field="cbx_NHANHRE" />
+							</g:HorizontalPanel>
+							<g:HorizontalPanel styleName="{style.panel_input}">
+								<g:Label styleName="{style.label}" text="GHI CHÚ" />
+								<g:TextBox styleName="{style.input}" ui:field="edt_GHICHU"/>
 							</g:HorizontalPanel>
 						</g:VerticalPanel>
 					<g:HorizontalPanel width="100%">

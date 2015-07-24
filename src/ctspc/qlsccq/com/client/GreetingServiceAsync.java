@@ -5,10 +5,12 @@ import java.util.List;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 
 import ctspc.qlsccq.com.shared.CallbackResult;
+import ctspc.qlsccq.com.shared.Obj_SOI;
 import ctspc.qlsccq.com.shared.Obj_SU_CO;
 import ctspc.qlsccq.com.shared.Obj_TRAM;
 import ctspc.qlsccq.com.shared.Obj_TRU;
 import ctspc.qlsccq.com.shared.Obj_TUYEN;
+import ctspc.qlsccq.com.shared.Obj_User;
 import ctspc.qlsccq.com.shared.Obj_donvi;
 
 public interface GreetingServiceAsync {
@@ -59,6 +61,12 @@ public interface GreetingServiceAsync {
 
 	void get_SUCO_LOC(String from, String to,
 			AsyncCallback<CallbackResult> callback);
+	
+	void login(Obj_User mUS, AsyncCallback<Obj_User> callback);
+
+	void getSOI(AsyncCallback<List<Obj_SOI>> callback);
+
+	void getSOI_USE(Obj_TUYEN oTUYEN, AsyncCallback<CallbackResult> callback);
 
 //	void greetServer(String input, AsyncCallback<String> callback)
 //			throws IllegalArgumentException;

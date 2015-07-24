@@ -1,0 +1,2 @@
+serviceClass: ctspc.qlsccq.com.client.GreetingService
+path: D407BC98E49C506E8AB1180DABF00BCA.gwt.rpc

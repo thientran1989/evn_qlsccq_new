@@ -26,6 +26,7 @@ import ctspc.qlsccq.com.shared.Obj_SU_CO;
 import ctspc.qlsccq.com.shared.Obj_TRAM;
 import ctspc.qlsccq.com.shared.Obj_TRU;
 import ctspc.qlsccq.com.shared.Obj_TUYEN;
+import ctspc.qlsccq.com.shared.Obj_donvi;
 import ctspc.qlsccq.com.shared.ObjectClient;
 import ctspc.qlsccq.com.shared.Utils;
 
@@ -81,6 +82,7 @@ public class Android_DSMBA_Servlet extends HttpServlet {
 		List<Obj_TRAM> list_TRAM = null;
 		List<Obj_TUYEN> list_TUYEN = null;
 		List<Obj_SU_CO> list_SUCO = null;
+		List<Obj_donvi> list_DONVI = null;
 
 		Connection con =null;
 		ResultSet rs_tram = null;
@@ -91,8 +93,21 @@ public class Android_DSMBA_Servlet extends HttpServlet {
 		Statement st_tru = null;
 		ResultSet rs_suco = null;
 		Statement st_suco = null;
+		ResultSet rs_donvi = null;
+		Statement st_donvi = null;
 		try {
 			con = getDBConnection();
+			
+			st_donvi = con.createStatement();
+			rs_donvi = st_donvi.executeQuery(DB_SQL.SQL_GET_DONVI);
+			if (rs_donvi != null) {
+				list_DONVI = new ArrayList<Obj_donvi>();
+				while (rs_donvi.next()) {
+					Obj_donvi oDONVI = ResultSet_Obj.set_result_DONVI(rs_donvi);
+					list_DONVI.add(oDONVI);
+				}
+			}
+			mCB.setList_DONVI(list_DONVI);
 
 			st_tram = con.createStatement();
 			rs_tram = st_tram.executeQuery(DB_SQL.SQL_GET_TRAM);
@@ -104,6 +119,7 @@ public class Android_DSMBA_Servlet extends HttpServlet {
 				}
 			}
 			mCB.setList_tram(list_TRAM);
+			
 			st_tuyen = con.createStatement();
 			rs_tuyen = st_tuyen.executeQuery(DB_SQL.SQL_GET_TUYEN);
 			if (rs_tuyen != null) {
@@ -167,6 +183,12 @@ public class Android_DSMBA_Servlet extends HttpServlet {
 				}
 				if (rs_suco != null) {
 					rs_suco.close();
+				}
+				if (st_donvi != null) {
+					st_donvi.close();
+				}
+				if (rs_donvi != null) {
+					rs_donvi.close();
 				}
 			} catch (SQLException e) {
 				e.printStackTrace();

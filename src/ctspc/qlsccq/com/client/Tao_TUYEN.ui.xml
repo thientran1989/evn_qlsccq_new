@@ -137,6 +137,10 @@
 								<g:TextBox styleName="{style.input}" ui:field="edt_CHIEUDAI" />
 							</g:HorizontalPanel>
 							<g:HorizontalPanel styleName="{style.panel_input}">
+								<g:Label text="THÔNG TIN SỢI" styleName="{style.label}" />
+								<g:TextBox styleName="{style.input}" ui:field="edt_TT_SOI"/>
+							</g:HorizontalPanel>
+							<g:HorizontalPanel styleName="{style.panel_input}">
 								<g:Label text="TRẠM ĐẦU" styleName="{style.label}" ui:field="TV_MANGXONG" />
 								<g:ListBox styleName="{style.input}" ui:field="cbx_TRAMDAU" />
 							</g:HorizontalPanel>

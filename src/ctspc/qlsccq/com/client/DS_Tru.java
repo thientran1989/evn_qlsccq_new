@@ -7,29 +7,31 @@ import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.cell.client.FieldUpdater;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style.Unit;
-import com.google.gwt.uibinder.client.UiBinder;
-import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.google.gwt.user.client.ui.Composite;
-import com.google.gwt.user.client.ui.Widget;
-import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.user.client.ui.TextBox;
-import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.KeyCodes;
+import com.google.gwt.event.dom.client.KeyDownEvent;
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.cellview.client.Column;
 import com.google.gwt.user.cellview.client.TextColumn;
+import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.TextBox;
+import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.view.client.AsyncDataProvider;
 import com.google.gwt.view.client.HasData;
 import com.smartgwt.client.util.BooleanCallback;
 import com.smartgwt.client.util.SC;
-import com.google.gwt.event.dom.client.KeyDownEvent;
 
 import ctspc.qlsccq.com.shared.CallbackResult;
 import ctspc.qlsccq.com.shared.Obj_TRU;
-import ctspc.qlsccq.com.shared.Obj_TUYEN;
+import ctspc.qlsccq.com.shared.Obj_donvi;
+import com.google.gwt.user.client.ui.ListBox;
+import com.google.gwt.event.dom.client.ChangeEvent;
 
 public class DS_Tru extends Composite {
 
@@ -42,36 +44,19 @@ public class DS_Tru extends Composite {
 	Button btn_timkiem;
 	@UiField(provided = true)
 	CellTable<Obj_TRU> cell_TRU = new CellTable<Obj_TRU>();
+	@UiField ListBox cbx_DONVI;
 	boolean load = false;
-	List<Obj_TUYEN> list_tuyen=null;
+	List<Obj_donvi> list_donvi=null;
+	List<Obj_TRU> list_tru = null;
 
 	interface DS_TruUiBinder extends UiBinder<Widget, DS_Tru> {
 	}
 
-	public DS_Tru() {
+	public DS_Tru(List<Obj_donvi> list_DONVI) {
 		initWidget(uiBinder.createAndBindUi(this));
 		load = false;
-		list_tuyen = new ArrayList<Obj_TUYEN>();
-		// lay danh sach tuyen
-		greetingService.getTUYEN_USE(new AsyncCallback<CallbackResult>() {
-			public void onFailure(Throwable caught) {
-				Window.alert("LỖI LẤY TUYẾN " + caught.toString());
-			}
-
-			@SuppressWarnings("unchecked")
-			public void onSuccess(CallbackResult result) {
-				try {
-					list_tuyen = (List<Obj_TUYEN>) result
-							.getResultObj();
-				} catch (Exception e) {
-					
-				}
-				if (list_tuyen == null) {
-					Window.alert("TUYẾN NULL\n");
-				}
-			}
-		});
-
+		list_donvi = new ArrayList<Obj_donvi>(list_DONVI);
+		set_combo_donvi(list_donvi);
 		// lay danh sach tru
 		greetingService.getTRU_USE(new AsyncCallback<CallbackResult>() {
 			public void onFailure(Throwable caught) {
@@ -80,7 +65,7 @@ public class DS_Tru extends Composite {
 
 			@SuppressWarnings("unchecked")
 			public void onSuccess(CallbackResult result) {
-				List<Obj_TRU> list_tru = (List<Obj_TRU>) result.getResultObj();
+				list_tru = (List<Obj_TRU>) result.getResultObj();
 				if (list_tru != null) {
 					set_list(list_tru);
 				} else {
@@ -120,10 +105,10 @@ public class DS_Tru extends Composite {
 			}
 		};
 		// tuyen
-		TextColumn<Obj_TRU> tuyenColumn = new TextColumn<Obj_TRU>() {
+		TextColumn<Obj_TRU> donviColumn = new TextColumn<Obj_TRU>() {
 			@Override
 			public String getValue(Obj_TRU object) {
-				return object.getTUYEN_label(list_tuyen);
+				return object.getDONVI_label(list_donvi);
 			}
 		};
 		// mang xong
@@ -203,8 +188,8 @@ public class DS_Tru extends Composite {
 		if (load == false) {
 			cell_TRU.setColumnWidth(truColumn, 40, Unit.PCT);
 			cell_TRU.addColumn(truColumn, "TRỤ");
-			cell_TRU.setColumnWidth(tuyenColumn, 60, Unit.PCT);
-			cell_TRU.addColumn(tuyenColumn, "TUYẾN");
+			cell_TRU.setColumnWidth(donviColumn, 60, Unit.PCT);
+			cell_TRU.addColumn(donviColumn, "ĐƠN VỊ");
 			cell_TRU.setColumnWidth(mangxongColumn, 40, Unit.PCT);
 			cell_TRU.addColumn(mangxongColumn, "MĂNGXÔNG");
 			cell_TRU.setColumnWidth(nhanhreColumn, 40, Unit.PCT);
@@ -234,5 +219,28 @@ public class DS_Tru extends Composite {
 		if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
 			btn_timkiem.click();
 		}
+	}
+	public void set_combo_donvi(List<Obj_donvi> list_dvi){
+		if(list_dvi!=null){
+			for (Obj_donvi obj_donvi : list_dvi) {
+				cbx_DONVI.addItem(obj_donvi.getTen_donvi());
+			}
+		}
+	}
+	@UiHandler("cbx_DONVI")
+	void onCbx_DONVIChange(ChangeEvent event) {
+		String MADV = list_donvi.get(cbx_DONVI.getSelectedIndex()).getMa_donvi();
+		List<Obj_TRU> new_list = new ArrayList<Obj_TRU>();
+		if(list_tru!=null){
+			for (Obj_TRU obj_TRU : list_tru) {
+				if(obj_TRU.getMA_DVI().equals(MADV)){
+					new_list.add(obj_TRU);
+				}
+			}
+			if(new_list!=null){
+				set_list(new_list);
+			}
+		}
+		
 	}
 }

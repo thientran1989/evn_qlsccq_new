@@ -18,6 +18,7 @@ import com.google.gwt.user.client.ui.VerticalPanel;
 import ctspc.qlsccq.com.shared.CallbackResult;
 import ctspc.qlsccq.com.shared.Obj_TRAM;
 import ctspc.qlsccq.com.shared.Obj_TUYEN;
+import ctspc.qlsccq.com.shared.Obj_User;
 import ctspc.qlsccq.com.shared.Obj_donvi;
 
 public class Main extends Composite {
@@ -33,13 +34,13 @@ public class Main extends Composite {
 	interface MainUiBinder extends UiBinder<Widget, Main> {
 	}
 
-	public Main() {
+	public Main(final Obj_User oUSER) {
 		initWidget(uiBinder.createAndBindUi(this));
 		
 		// menu them
 		Command menuCommand_themtram = new Command() {
 			public void execute() {
-				final Tao_TRAM pp = new Tao_TRAM();
+				final Tao_TRAM pp = new Tao_TRAM(oUSER);
 				pp.setPopupPositionAndShow(new PositionCallback() {
 					public void setPosition(int offsetWidth,
 							int offsetHeight) {
@@ -60,7 +61,7 @@ public class Main extends Composite {
 					public void onSuccess(CallbackResult result) {
 						List<Obj_TRAM> list_tram = (List<Obj_TRAM>) result.getResultObj();
 						if (list_tram!=null){
-							final Tao_TUYEN pp = new Tao_TUYEN(list_tram);
+							final Tao_TUYEN pp = new Tao_TUYEN(list_tram,oUSER);
 							pp.setPopupPositionAndShow(new PositionCallback() {
 								public void setPosition(int offsetWidth,
 										int offsetHeight) {
@@ -97,7 +98,7 @@ public class Main extends Composite {
 									List<Obj_donvi> list_donvi = (List<Obj_donvi>) result.getResultObj();
 									if (list_donvi!=null){
 										// tao tru
-										final Tao_TRU pp = new Tao_TRU(list_donvi,list_tuyen);
+										final Tao_TRU pp = new Tao_TRU(oUSER,list_donvi,list_tuyen);
 										pp.setPopupPositionAndShow(new PositionCallback() {
 											public void setPosition(int offsetWidth,
 													int offsetHeight) {
@@ -135,7 +136,7 @@ public class Main extends Composite {
 					public void onSuccess(CallbackResult result) {
 						List<Obj_TUYEN> list_tuyen = (List<Obj_TUYEN>) result.getResultObj();
 						if (list_tuyen!=null){
-							final Tao_Suco pp = new Tao_Suco(list_tuyen);
+							final Tao_Suco pp = new Tao_Suco(oUSER,list_tuyen);
 							pp.setPixelSize(Window.getClientWidth()-100,
 									Window.getClientHeight() - 100);
 							pp.setPopupPositionAndShow(new PositionCallback() {
@@ -172,8 +173,25 @@ public class Main extends Composite {
 		};
 		Command menuCommand_loc_tru = new Command() {
 			public void execute() {
-				ver_main.clear();
-				ver_main.add(new DS_Tru());
+				greetingService.getDONVI_USE(new AsyncCallback<CallbackResult>(){
+					public void onFailure(Throwable caught) {
+						Window.alert("LỖI LẤY ĐƠN VỊ "+caught.toString());
+					}
+					public void onSuccess(CallbackResult result) {
+						@SuppressWarnings("unchecked")
+						List<Obj_donvi> list_donvi = (List<Obj_donvi>) result.getResultObj();
+						if (list_donvi!=null){
+							// tao tru
+							ver_main.clear();
+							ver_main.add(new DS_Tru(list_donvi));
+							// het tao tru
+						}else{
+							Window.alert("DV NULL\n");
+						}
+					
+				}
+				});
+				
 			}
 		};
 		

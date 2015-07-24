@@ -91,18 +91,25 @@ public class DS_Tuyen extends Composite{
 				return object.getTEN_TUYEN();
 			}
 		};
-		// ma so tai san
+		// CHIEU DAI
 		TextColumn<Obj_TUYEN> chieudaiColumn = new TextColumn<Obj_TUYEN>() {
 			@Override
 			public String getValue(Obj_TUYEN object) {
 				return object.getCHIEU_DAI();
 			}
 		};
-		// don vi quan ly
+		// LOAI CAP
 		TextColumn<Obj_TUYEN> loaicapColumn = new TextColumn<Obj_TUYEN>() {
 			@Override
 			public String getValue(Obj_TUYEN object) {
 				return object.getLOAI_CAP_label();
+			}
+		};
+		// tt soi
+		TextColumn<Obj_TUYEN> TT_SOI_Column = new TextColumn<Obj_TUYEN>() {
+			@Override
+			public String getValue(Obj_TUYEN object) {
+				return object.getTT_SOI();
 			}
 		};
 		// Add a ButtonCell sua
@@ -150,6 +157,7 @@ public class DS_Tuyen extends Composite{
 			cell_TUYEN.addColumn(chieudaiColumn, "CHIỀU DÀI");
 			cell_TUYEN.setColumnWidth(loaicapColumn, 40, Unit.PCT);
 			cell_TUYEN.addColumn(loaicapColumn, "LOẠI CÁP");
+			cell_TUYEN.addColumn(TT_SOI_Column, "THÔNG TIN SỢI");
 			cell_TUYEN.addColumn(editSLBtn, "");
 			cell_TUYEN.addColumn(btn_XOA, "");
 		}

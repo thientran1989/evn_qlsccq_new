@@ -15,10 +15,12 @@ import ctspc.qlsccq.com.client.GreetingService;
 import ctspc.qlsccq.com.shared.CallbackResult;
 import ctspc.qlsccq.com.shared.DB_CONFIG;
 import ctspc.qlsccq.com.shared.DB_SQL;
+import ctspc.qlsccq.com.shared.Obj_SOI;
 import ctspc.qlsccq.com.shared.Obj_SU_CO;
 import ctspc.qlsccq.com.shared.Obj_TRAM;
 import ctspc.qlsccq.com.shared.Obj_TRU;
 import ctspc.qlsccq.com.shared.Obj_TUYEN;
+import ctspc.qlsccq.com.shared.Obj_User;
 import ctspc.qlsccq.com.shared.Obj_donvi;
 import ctspc.qlsccq.com.shared.Utils;
 
@@ -138,33 +140,61 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
 		return kq;
 
 	}
-	public String Insert_TUYEN(Obj_TUYEN mTUYEN) throws SQLException {
+	
+	public String Insert_TUYEN(Obj_TUYEN oQD)
+			throws SQLException {
+
 		Connection dbConnection = null;
-		PreparedStatement preparedStatement = null;
-		String kq = "LOI";
-		String insertTableSQL = SQL_Obj.get_sql_insert_TUYEN();
+		PreparedStatement preparedStatement_TUYEN = null;
+		PreparedStatement preparedStatement_SOI = null;
+		String insertTableSQL_TUYEN = SQL_Obj.get_sql_insert_TUYEN();
+		String insertTableSQL_SOI = SQL_Obj.get_sql_insert_SOI();
+		String mCB = "LOI";
 		try {
 			dbConnection = getDBConnection();
-			preparedStatement = dbConnection.prepareStatement(insertTableSQL);
 			dbConnection.setAutoCommit(false);
-			SQL_Obj.set_preparedStatement_TUYEN(preparedStatement, mTUYEN);
-			preparedStatement.addBatch();
-			preparedStatement.executeBatch();
+			// TUYEN
+			if (oQD != null) {
+				preparedStatement_TUYEN = dbConnection
+						.prepareStatement(insertTableSQL_TUYEN);
+				SQL_Obj.set_preparedStatement_TUYEN(preparedStatement_TUYEN, oQD);
+				preparedStatement_TUYEN.addBatch();
+				preparedStatement_TUYEN.executeBatch();
+			}
+			// SOI
+			preparedStatement_SOI = dbConnection
+					.prepareStatement(insertTableSQL_SOI);
+			for (int i = 1; i < 25; i++) {
+				Obj_SOI oSOI = new Obj_SOI();
+				oSOI.setTUYEN(oQD.getMA_TUYEN());
+				oSOI.setSOI(i);
+				oSOI.setTT_SOI("KSD");
+				oSOI.setGHI_CHU("");
+				SQL_Obj.set_preparedStatement_SOI(preparedStatement_SOI, oSOI);
+				preparedStatement_SOI.addBatch();
+			}
+			preparedStatement_SOI.executeBatch();
+			
 			dbConnection.commit();
-			kq = Utils.CB_OK;
+			mCB=(Utils.CB_OK);
+
 		} catch (SQLException e) {
-			kq = e.toString();
+			mCB=(e.toString());
 			dbConnection.rollback();
+
 		} finally {
-			if (preparedStatement != null) {
-				preparedStatement.close();
+			if (preparedStatement_TUYEN != null) {
+				preparedStatement_TUYEN.close();
+			}
+			if (preparedStatement_SOI != null) {
+				preparedStatement_SOI.close();
 			}
 			if (dbConnection != null) {
 				dbConnection.close();
 			}
-		}
-		return kq;
 
+		}
+		return mCB;
 	}
 	public String Insert_SUCO(Obj_SU_CO mSC) throws SQLException {
 		Connection dbConnection = null;
@@ -420,7 +450,7 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
 			st = con.createStatement();
 				rs = st.executeQuery("Select * from "
 						+ Obj_TRU.tag_TABLE + " order by "
-						+ Obj_TRU.tag_TUYEN + " asc");
+						+ Obj_TRU.tag_TG_TAO + " desc");
 				if (rs != null) {
 					list_DVI = new ArrayList<Obj_TRU>();
 					while (rs.next()) {
@@ -454,7 +484,7 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
 			st = con.createStatement();
 				rs = st.executeQuery("Select * from "
 						+ Obj_TRU.tag_TABLE + " where "+Obj_TRU.tag_TRU+" like '%"+KEY+"%'"+" order by "
-						+ Obj_TRU.tag_TUYEN + " asc");
+						+ Obj_TRU.tag_TG_TAO + " desc");
 				if (rs != null) {
 					list_DVI = new ArrayList<Obj_TRU>();
 					while (rs.next()) {
@@ -656,6 +686,69 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
 					oCB.setResultObj(list_DVI);
 				}
 
+			st.close();
+			rs.close();
+			con.close();
+		} catch (Exception e) {
+
+		}
+		return oCB;
+	}
+	public Obj_User login(Obj_User mUS) throws IllegalArgumentException {
+		Connection con;
+		ResultSet rs = null;
+		Statement st;
+		Obj_User kq = null;
+		try {
+			con = getDBConnection();
+			st = con.createStatement();
+			rs = st.executeQuery("Select * from " + Obj_User.TAG_table_user
+					+ " where " + Obj_User.TAG_username_sc + " ='"
+					+ mUS.getUsername_mba() + "' and " + Obj_User.TAG_password
+					+ " ='" + mUS.getPassword() + "'");
+			if (rs != null) {
+				while (rs.next()) {
+					kq = ResultSet_Obj.set_result_USER(rs);
+				}
+			} else {
+				kq = null;
+			}
+			st.close();
+			rs.close();
+			con.close();
+		} catch (Exception e) {
+
+		}
+		return kq;
+	}
+
+	@Override
+	public List<Obj_SOI> getSOI() throws IllegalArgumentException {
+		return null;
+	}
+
+	@Override
+	public CallbackResult getSOI_USE(Obj_TUYEN oTUYEN)
+			throws IllegalArgumentException {
+		Connection con;
+		ResultSet rs = null;
+		Statement st;
+		List<Obj_SOI> list_DVI = null;
+		CallbackResult oCB = null;
+		oCB = new CallbackResult();
+		try {
+			oCB.setCommand("getds");
+			con = getDBConnection();
+			st = con.createStatement();
+				rs = st.executeQuery(DB_SQL.get_SQL_SOI_OF_TUYEN(oTUYEN));
+				if (rs != null) {
+					list_DVI = new ArrayList<Obj_SOI>();
+					while (rs.next()) {
+						Obj_SOI mBA = ResultSet_Obj.set_result_SOI(rs);
+						list_DVI.add(mBA);
+					}
+					oCB.setResultObj(list_DVI);
+				}
 			st.close();
 			rs.close();
 			con.close();

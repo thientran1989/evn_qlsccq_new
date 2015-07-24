@@ -20,6 +20,7 @@ import com.smartgwt.client.util.SC;
 import ctspc.qlsccq.com.shared.CallbackResult;
 import ctspc.qlsccq.com.shared.Obj_TRAM;
 import ctspc.qlsccq.com.shared.Obj_Text;
+import ctspc.qlsccq.com.shared.Obj_User;
 import ctspc.qlsccq.com.shared.Utils;
 
 public class Tao_TRAM extends PopupPanel {
@@ -36,14 +37,16 @@ public class Tao_TRAM extends PopupPanel {
 	@UiField
 	SimplePanel pane_hoantat;
 	List<Obj_Text> list_loaitram=null;
+	Obj_User oL_USER=null;
 
 	interface Tao_TRAMUiBinder extends UiBinder<Widget, Tao_TRAM> {
 	}
 
-	public Tao_TRAM() {
+	public Tao_TRAM(Obj_User oUSER) {
 		setWidget(uiBinder.createAndBindUi(this));
 		super.setGlassEnabled(true);
 		super.center();
+		oL_USER = oUSER;
 		list_loaitram = Utils.get_list_LOAITRAM();
 		set_combo_mangxong(list_loaitram);
 		pane_trolai.sinkEvents(Event.ONCLICK);
@@ -120,6 +123,8 @@ public class Tao_TRAM extends PopupPanel {
 			oTRU.setMA_TRAM(edt_MATRAM.getText().toString());
 			oTRU.setTEN_TRAM(edt_TENTRAM.getText().toString());
 			oTRU.setLOAI_TRAM(list_loaitram.get(cbx_LOAITRAM.getSelectedIndex()).KEY);
+			oTRU.setUSER_TAO(oL_USER.getUsername_mba());
+			oTRU.setUSER_SUA(oL_USER.getUsername_mba());
 		} catch (Exception e) {
 			
 		}

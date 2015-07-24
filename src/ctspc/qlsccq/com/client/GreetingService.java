@@ -6,10 +6,12 @@ import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 
 import ctspc.qlsccq.com.shared.CallbackResult;
+import ctspc.qlsccq.com.shared.Obj_SOI;
 import ctspc.qlsccq.com.shared.Obj_SU_CO;
 import ctspc.qlsccq.com.shared.Obj_TRAM;
 import ctspc.qlsccq.com.shared.Obj_TRU;
 import ctspc.qlsccq.com.shared.Obj_TUYEN;
+import ctspc.qlsccq.com.shared.Obj_User;
 import ctspc.qlsccq.com.shared.Obj_donvi;
 
 /**
@@ -22,6 +24,7 @@ public interface GreetingService extends RemoteService {
 	List<Obj_donvi> get_DONVI() throws IllegalArgumentException;
 	List<Obj_TRU> get_TRU() throws IllegalArgumentException;
 	List<Obj_TRAM> getTRAM() throws IllegalArgumentException;
+	List<Obj_SOI> getSOI() throws IllegalArgumentException;
 	CallbackResult get_SUCO_USE() throws IllegalArgumentException;
 	
 	// tru
@@ -50,4 +53,9 @@ public interface GreetingService extends RemoteService {
 	
 	// don vi
 	CallbackResult getDONVI_USE() throws IllegalArgumentException;
+	// SOI
+	CallbackResult getSOI_USE(Obj_TUYEN oTUYEN) throws IllegalArgumentException;
+	
+	// user
+	Obj_User login(Obj_User mUS) throws IllegalArgumentException;
 }

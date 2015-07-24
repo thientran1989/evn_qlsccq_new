@@ -8,7 +8,6 @@ public class Obj_TRU implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	public String TUYEN;
 	public String TRU;
 	public String X;
 	public String Y;
@@ -18,9 +17,10 @@ public class Obj_TRU implements Serializable{
 	public String GHI_CHU;
 	public java.sql.Timestamp TG_TAO ;
 	public String MA_DVI;
+	public String USER_TAO;
+	public String USER_SUA;
 	
 	public static final String tag_TABLE="SC_TRU";
-	public static String tag_TUYEN="TUYEN";
 	public static String tag_TRU="TRU";
 	public static String tag_X="X";
 	public static String tag_Y="Y";
@@ -30,7 +30,21 @@ public class Obj_TRU implements Serializable{
 	public static String tag_GHI_CHU ="GHI_CHU";
 	public static String tag_TG_TAO ="TG_TAO";
 	public static String tag_MA_DVI ="MA_DVI";
-
+	public static final String tag_USER_TAO="USER_TAO";
+	public static final String tag_USER_SUA="USER_SUA";
+	
+	public String getUSER_TAO() {
+		return USER_TAO;
+	}
+	public void setUSER_TAO(String uSER_TAO) {
+		USER_TAO = uSER_TAO;
+	}
+	public String getUSER_SUA() {
+		return USER_SUA;
+	}
+	public void setUSER_SUA(String uSER_SUA) {
+		USER_SUA = uSER_SUA;
+	}
 	public String getTRU() {
 		return TRU;
 	}
@@ -54,12 +68,6 @@ public class Obj_TRU implements Serializable{
 	}
 	public void setMANGXONG(String mANGXONG) {
 		MANGXONG = mANGXONG;
-	}
-	public String getTUYEN() {
-		return TUYEN;
-	}
-	public void setTUYEN(String tUYEN) {
-		TUYEN = tUYEN;
 	}
 	public String getNHANH_RE() {
 		return NHANH_RE;
@@ -120,12 +128,12 @@ public class Obj_TRU implements Serializable{
 		}
 		return KQ;
 	}
-	public String getTUYEN_label(List<Obj_TUYEN> list_tuyen) {
-		String KQ = getTUYEN();
+	public String getDONVI_label(List<Obj_donvi> list_tuyen) {
+		String KQ = getMA_DVI();
 		try {
-			for (Obj_TUYEN oT : list_tuyen) {
-				if(oT.MA_TUYEN.equals(KQ)){
-					KQ = oT.getTEN_TUYEN();
+			for (Obj_donvi oT : list_tuyen) {
+				if(oT.ma_donvi.equals(KQ)){
+					KQ = oT.getTen_donvi();
 				}
 			}
 		} catch (Exception e) {

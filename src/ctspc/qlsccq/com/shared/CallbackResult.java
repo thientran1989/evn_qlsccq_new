@@ -14,6 +14,8 @@ public class CallbackResult implements Serializable {
 	public List<Obj_TUYEN> list_tuyen=null;
 	public List<Obj_TRU> list_tru=null;
 	public List<Obj_SU_CO> list_suco=null;
+	public List<Obj_donvi> list_DONVI=null;
+	public List<Obj_SOI> list_SOI=null;
 	public String kq2="";
 	
 	public int getResultInt() {
@@ -67,5 +69,18 @@ public class CallbackResult implements Serializable {
 	public void setList_suco(List<Obj_SU_CO> list_suco) {
 		this.list_suco = list_suco;
 	}
+	public List<Obj_donvi> getList_DONVI() {
+		return list_DONVI;
+	}
+	public void setList_DONVI(List<Obj_donvi> list_DONVI) {
+		this.list_DONVI = list_DONVI;
+	}
+	public List<Obj_SOI> getList_SOI() {
+		return list_SOI;
+	}
+	public void setList_SOI(List<Obj_SOI> list_SOI) {
+		this.list_SOI = list_SOI;
+	}
+	
 	
 }
